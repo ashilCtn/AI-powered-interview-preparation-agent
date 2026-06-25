@@ -36,3 +36,25 @@ export const apiLogin = (email, password) =>
   request('POST', '/auth/login', { email, password })
 
 
+// SESSIONS 
+export const apiGetSessions = () =>
+  request('GET', '/sessions')
+
+export const apiGetSession = (id) =>
+  request('GET', `/sessions/${id}`)
+
+export const apiCreateSession = (form) =>
+  request('POST', '/sessions', form)
+
+export const apiDeleteSession = (id) =>
+  request('DELETE', `/sessions/${id}`)
+
+export const apiLoadMore = (id) =>
+  request('POST', `/sessions/${id}/load-more`)
+
+// ── Q&A ───────────────────────────────────────────────
+export const apiUpdateQna = (sessionId, qnaId, updates) =>
+  request('PATCH', `/sessions/${sessionId}/qna/${qnaId}`, updates)
+
+export const apiLearnMore = (topic, role) =>
+  request('POST', '/sessions/learn-more', { topic, role })
