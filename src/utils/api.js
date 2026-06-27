@@ -1,7 +1,7 @@
 // This file handles ALL communication with your backend.
 // Every function here talks to one API endpoint.
 
-const BASE_URL = 'http://localhost:5000/api'
+const BASE_URL = 'https://ai-interview-preparation-aj59.onrender.com/api'
 
 // Helper: makes the fetch call and returns the data (or throws an error)
 const request = async (method, path, body = null) => {
