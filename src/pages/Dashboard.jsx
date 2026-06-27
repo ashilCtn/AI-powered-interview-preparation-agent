@@ -5,7 +5,7 @@ import useAuthStore from '../store/authStore'
 import useSessionStore from '../store/sessionStore'
 import SessionCard from '../components/SessionCard'
 import AddSessionModal from '../components/AddSessionModal'
-import CustomNavBar from '../components/CustomNavBar'
+import CustomNavBar from '../components/CustomNavbar'
 
 const Dashboard = () => {
   const [showModal, setShowModal] = useState(false)
