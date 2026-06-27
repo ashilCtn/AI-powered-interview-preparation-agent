@@ -4,7 +4,7 @@ import useAuthStore from '../store/authStore'
 import useSessionStore from '../store/sessionStore'
 import QuestionAccordion from '../components/QuestionAccordion'
 import LearnMorePanel from '../components/LearnMorePanel'
-import CustomNavBar from '../components/CustomNavBar'
+import CustomNavBar from '../components/CustomNavbar'
 import { Plus } from "lucide-react";
 
 const Session = () => {

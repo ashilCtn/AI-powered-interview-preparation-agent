@@ -4,7 +4,7 @@ import AuthModal from '../components/AuthModal'
 import { useNavigate } from 'react-router-dom'
 import useAuthStore from '../store/authStore'
 import { useEffect } from 'react'
-import CustomNavBar from '../components/CustomNavBar'
+import CustomNavBar from '../components/CustomNavbar'
 
 const FEATURES = [
   {
