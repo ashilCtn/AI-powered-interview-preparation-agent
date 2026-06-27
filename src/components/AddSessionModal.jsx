@@ -12,18 +12,22 @@ const AddSessionModal = ({ onClose }) => {
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value })
 
   const handleSubmit = async () => {
-    setError(null)
-    try {
-      const result = await createSession(form)
-      if (result) {
-        onClose() // only close if success
-      } else {
-        setError('Failed to create session. Please try again.')
-      }
-    } catch (err) {
-      setError(err.message || 'Something went wrong.')
+  setError(null)
+  try {
+    const payload = {
+      ...form,
+      topics: form.topics.split(',').map(t => t.trim()).filter(Boolean)
     }
+    const result = await createSession(payload)
+    if (result) {
+      onClose()
+    } else {
+      setError('Failed to create session. Please try again.')
+    }
+  } catch (err) {
+    setError(err.message || 'Something went wrong.')
   }
+}
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm px-4">

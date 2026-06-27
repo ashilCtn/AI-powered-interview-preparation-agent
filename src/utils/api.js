@@ -1,7 +1,7 @@
 // This file handles ALL communication with your backend.
 // Every function here talks to one API endpoint.
 
-const BASE_URL = 'http://localhost:5000/api' // change this to your backend URL
+const BASE_URL = 'http://localhost:5000/api'
 
 // Helper: makes the fetch call and returns the data (or throws an error)
 const request = async (method, path, body = null) => {
@@ -52,7 +52,7 @@ export const apiDeleteSession = (id) =>
 export const apiLoadMore = (id) =>
   request('POST', `/sessions/${id}/load-more`)
 
-// ── Q&A ───────────────────────────────────────────────
+// Q&A 
 export const apiUpdateQna = (sessionId, qnaId, updates) =>
   request('PATCH', `/sessions/${sessionId}/qna/${qnaId}`, updates)
 
