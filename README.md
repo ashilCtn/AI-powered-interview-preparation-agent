@@ -7,7 +7,7 @@ An AI-powered interview preparation app that generates personalized interview qu
 ### Personalized Q&A Sessions
 Generate role-specific interview questions tailored to your experience level and chosen topics.
 
-![Personalized Sessions](./screenshots/create-session.png)
+![Personalized Sessions](./screenshots/session.png)
 
 ### Deep Dive Explanations
 Click "Learn More" on any question to get an AI-generated concept breakdown in a side panel.
