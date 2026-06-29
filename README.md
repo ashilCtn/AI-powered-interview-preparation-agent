@@ -2,40 +2,50 @@
 
 An AI-powered interview preparation app that generates personalized interview questions and answers based on your role, experience, and focus topics.
 
-![Landing Page](./screenshots/landing.png)
+| ![Landing Page](./screenshots/landing.png) |
+|:---:|
 
+---
 
 ## Features
 
 ### Personalized Q&A Sessions
 Generate role-specific interview questions tailored to your experience level and chosen topics.
 
-![Personalized Sessions](./screenshots/session.png)
+| ![Personalized Sessions](./screenshots/session.png) |
+|:---:|
 
 ### Deep Dive Explanations
 Click "Learn More" on any question to get an AI-generated concept breakdown in a side panel.
 
-![Learn More Panel](./screenshots/learn-more.png)
+| ![Learn More Panel](./screenshots/learn-more.png) |
+|:---:|
 
 ### Pin & Organize
 Pin important questions so they stay at the top of your session.
 
-![Pin Questions](./screenshots/pin-question.png)
+| ![Pin Questions](./screenshots/pin-question.png) |
+|:---:|
 
 ### Load More
 Expand any session with additional AI-generated questions on demand.
 
-![Load More](./screenshots/load-more.png)
+| ![Load More](./screenshots/load-more.png) |
+|:---:|
 
 ### Session Management
 Save, revisit, and delete your interview prep sessions from the dashboard.
 
-![Dashboard](./screenshots/dashboard.png)
+| ![Dashboard](./screenshots/dashboard.png) |
+|:---:|
 
 ### Auth
 JWT-based signup/login with persistent sessions via localStorage.
 
-![Auth Modal](./screenshots/auth.png)
+| ![Auth Modal](./screenshots/auth.png) |
+|:---:|
+
+---
 
 ## Tech Stack
 
@@ -48,6 +58,8 @@ JWT-based signup/login with persistent sessions via localStorage.
 - Node.js / Express REST API
 - JWT authentication
 - AI-powered question generation
+
+---
 
 ## Project Structure
 
@@ -70,6 +82,8 @@ src/
 └── utils/
     └── api.js                 # API helper functions
 ```
+
+---
 
 ## Getting Started
 
@@ -106,6 +120,8 @@ npm run dev
 
 The app will be available at `http://localhost:5173`.
 
+---
+
 ## Usage
 
 1. **Sign up** or log in from the landing page
@@ -115,6 +131,8 @@ The app will be available at `http://localhost:5173`.
 5. Click **Learn More** to open a deep-dive explanation in the side panel
 6. **Pin** questions you want to revisit — pinned questions float to the top
 7. Click **Load More** to generate additional questions for the same session
+
+---
 
 ## License
 
