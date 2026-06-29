@@ -2,6 +2,9 @@
 
 An AI-powered interview preparation app that generates personalized interview questions and answers based on your role, experience, and focus topics.
 
+![Landing Page](./screenshots/landing.png)
+
+
 ## Features
 
 ### Personalized Q&A Sessions
